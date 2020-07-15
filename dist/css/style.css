@@ -19,6 +19,21 @@ img {
   height: auto;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
 .page-header {
   display: flex;
   flex-direction: column;
@@ -90,7 +105,6 @@ img {
 
 .stats__header {
   padding: 30px 40px 25px 40px;
-  background-color: #fff;
 }
 
 .stats__list {
@@ -119,5 +133,56 @@ img {
   }
   .stats__list {
     width: 640px;
+  }
+}
+
+.advantages {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.advantages__list {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__item {
+  text-align: center;
+  padding: 80px 40px 42px 40px;
+  list-style: none;
+}
+
+.advantages__toggles {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .advantages {
+    width: 640px;
+    margin: 0 auto;
+  }
+  .advantages__item {
+    padding: 40px 37px 40px 27px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .advantages__item {
+    width: 320;
+    padding: 75px 37px 106px 37px;
+    text-align: center;
+  }
+  .advantages__toggles {
+    display: none;
   }
 }
