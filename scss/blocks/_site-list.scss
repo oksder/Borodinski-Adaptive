@@ -35,18 +35,10 @@
   .site-list {
     width: 570px;
   }
-
-  .user-list {
-    width: 60px;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .site-list {
     width: 780px;
-  }
-
-  .user-list {
-    width: 160px;
   }
 }
