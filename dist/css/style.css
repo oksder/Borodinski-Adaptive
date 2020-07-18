@@ -41,13 +41,12 @@ input[type="radio"].visually-hidden {
 }
 
 .page-header__logo {
-  height: 85px;
+  margin: 27px 0;
   text-align: center;
 }
 
 .page-header__image {
   width: 226px;
-  height: 85px;
 }
 
 @media (min-width: 768px) {
