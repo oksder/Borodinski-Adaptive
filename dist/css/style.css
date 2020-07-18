@@ -626,6 +626,7 @@ input[type="radio"].visually-hidden {
     width: 640px;
   }
   .stats__list {
+    display: flex;
     width: 640px;
   }
 }
