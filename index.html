@@ -10,9 +10,13 @@
 <body>
   <header class="page-header">
     <a href="#" class="page-header__logo">
-      <img class="page-header__image" src="dist/img/logotype-mobile.png" width="226" height="30" alt="Borodinski Logo">
+      <picture>
+          <source media="(min-width: 1200px)" srcset="dist/img/logotype-desktop.svg">
+          <source media="(min-width: 769px)" srcset="dist/img/logotype-tablet.svg">
+          <img class="page-header__image" src="dist/img/logotype-mobile.svg" width="226" height="30" alt="Borodinski Logo">
+      </picture>
     </a>
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
