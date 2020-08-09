@@ -40,6 +40,7 @@
   height:2px;
 
   background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
 }
 
 .main-nav--closed .main-nav__toggle:active::before {
