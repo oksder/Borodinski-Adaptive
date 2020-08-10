@@ -122,8 +122,8 @@
   .advantages__item::after {
     content: "";
     position: absolute;
-    bottom: -10px;
-    left: 30px;
+    bottom: 0;
+    left: 50px;
     width: 572px;
     height: 1px;
     background-color: #4a4a4a;
@@ -154,13 +154,24 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    width: 960px;
+    width: 1220px;
     margin: 0 auto;
-    display: flex;
   }
 
   .advantages__wrapper {
     display: flex;
+    width: 960px;
+  }
+
+  .advantages__wrapper::after {
+    position: absolute;
+    content: "";
+    bottom: -41px;
+    left: -120px;
+    height: 68px;
+    width: 1220px;
+    background: url(../img/corner-light-desktop.png);
+    background-repeat: no-repeat;
   }
 
   .advantages__list {
@@ -170,6 +181,7 @@
 
   .advantages__item {
     display: block;
+    width: 260px;
     padding: 70px 30px;
     text-align: center;
   }
