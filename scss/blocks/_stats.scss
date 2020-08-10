@@ -112,6 +112,9 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main {
+    background-color: #353535;
+  }
   .stats {
     width: 640px;
     margin-top: -185px;
