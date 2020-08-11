@@ -993,6 +993,7 @@ input[type="radio"].visually-hidden {
     border-bottom: 42px solid #f8f5f2;
   }
   .news__wrapper {
+    position: relative;
     width: 640px;
     margin: 0 auto;
   }
@@ -1019,7 +1020,7 @@ input[type="radio"].visually-hidden {
   .news__to-all {
     position: absolute;
     top: 48px;
-    right: 96px;
+    right: 0;
     width: 160px;
     padding: 6px 30px;
   }
@@ -1054,14 +1055,20 @@ input[type="radio"].visually-hidden {
     width: 960px;
     margin: 0 auto;
   }
+  .news__list {
+    flex-wrap: nowrap;
+  }
   .news__title {
     margin: 0;
-    padding: 52px 0 0 70px;
+    padding: 52px 0 0 80px;
     text-align: left;
   }
   .news__item {
-    width: 320px;
+    width: 290px;
     padding: 57px 40px 40px 0;
+  }
+  .news__item--9 {
+    display: inline-flex;
   }
 }
 
