@@ -2,13 +2,16 @@
   width: 320px;
   margin: 0 auto;
   color: #000000;
-  background-color: #ffffff;
+  background-color: $bg-lightgrey;
 }
 
 .news__title {
-  margin: 0;
-  padding: 0;
   text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 40px 0 20px 0;
 }
 
 .news__list {
@@ -17,9 +20,74 @@
 }
 
 .news__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 33px 20px 18px 20px;
+  padding: 20px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+
+    width: 280px;
+    height: 1px;
+    background-color: #4a4a4a;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+  }
+}
+
+.news__date {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+  color: #ffffff;
+  background-color: #000000;
+  z-index: 3;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0px;
+
+    border: 25px solid transparent;
+    border-bottom: 14px solid #000000;
+    transform: rotate(180deg);
+    z-index: -2;
+  }
+}
+
+.news__day {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.news__text {
+  width: 210px;
+  margin: 0;
+}
+
+.news__to-all {
+  display: block;
+  padding: 14px 0;
+  width: 280px;
+  margin: 0 auto;
+  border: 1px solid #e5ddd5;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet-width) {

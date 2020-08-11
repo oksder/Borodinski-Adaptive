@@ -1,21 +1,30 @@
 .advantages {
   width: 320px;
+  position: relative;
   margin: 0 auto;
   margin-bottom: 45px;
-}
 
-.advantages__wrapper {
-  position: relative;
-}
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -45px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 160px solid transparent;
+    border-bottom: 35px solid $bg-lightgrey;
+  }
 
-.advantages__wrapper::after {
-  position: absolute;
-  content: "";
-  bottom: -51px;
-  height: 40px;
-  width: 100%;
-  background: url(../img/corner-light-mobile.png);
-  background-repeat: no-repeat;
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -45px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: 160px solid transparent;
+    border-bottom: 35px solid $bg-lightgrey;
+  }
 }
 
 .advantages__list {
@@ -94,16 +103,28 @@
     margin: 0 auto;
     padding-bottom: 40px;
     background-color: #353535;
-  }
 
-  .advantages__wrapper::after {
-    position: absolute;
-    content: "";
-    bottom: -40px;
-    height: 68px;
-    width: 100%;
-    background: url(../img/corner-light-tablet.png);
-    background-repeat: no-repeat;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0px;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-left: 384px solid transparent;
+      border-bottom: 42px solid $bg-lightgrey;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-right: 384px solid transparent;
+      border-bottom: 42px solid $bg-lightgrey;
+    }
   }
 
   .advantages-info__wrapper {
@@ -156,22 +177,33 @@
   .advantages {
     width: 1220px;
     margin: 0 auto;
+
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0px;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-left: 600px solid transparent;
+      border-bottom: 65px solid $bg-lightgrey;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      bottom: 0px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-right: 600px solid transparent;
+      border-bottom: 65px solid $bg-lightgrey;
+    }
   }
 
   .advantages__wrapper {
     display: flex;
     width: 960px;
-  }
-
-  .advantages__wrapper::after {
-    position: absolute;
-    content: "";
-    bottom: -41px;
-    left: -120px;
-    height: 68px;
-    width: 1220px;
-    background: url(../img/corner-light-desktop.png);
-    background-repeat: no-repeat;
   }
 
   .advantages__list {

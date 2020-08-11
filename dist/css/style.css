@@ -646,22 +646,31 @@ input[type="radio"].visually-hidden {
 
 .advantages {
   width: 320px;
+  position: relative;
   margin: 0 auto;
   margin-bottom: 45px;
 }
 
-.advantages__wrapper {
-  position: relative;
-}
-
-.advantages__wrapper::after {
+.advantages::after {
   position: absolute;
   content: "";
-  bottom: -51px;
-  height: 40px;
-  width: 100%;
-  background: url(../img/corner-light-mobile.png);
-  background-repeat: no-repeat;
+  bottom: -45px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 160px solid transparent;
+  border-bottom: 35px solid #f8f5f2;
+}
+
+.advantages::before {
+  position: absolute;
+  content: "";
+  bottom: -45px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-right: 160px solid transparent;
+  border-bottom: 35px solid #f8f5f2;
 }
 
 .advantages__list {
@@ -740,14 +749,25 @@ input[type="radio"].visually-hidden {
     padding-bottom: 40px;
     background-color: #353535;
   }
-  .advantages__wrapper::after {
+  .advantages::after {
     position: absolute;
     content: "";
-    bottom: -40px;
-    height: 68px;
-    width: 100%;
-    background: url(../img/corner-light-tablet.png);
-    background-repeat: no-repeat;
+    bottom: 0px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 384px solid transparent;
+    border-bottom: 42px solid #f8f5f2;
+  }
+  .advantages::before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: 384px solid transparent;
+    border-bottom: 42px solid #f8f5f2;
   }
   .advantages-info__wrapper {
     padding-left: 33px;
@@ -792,19 +812,29 @@ input[type="radio"].visually-hidden {
     width: 1220px;
     margin: 0 auto;
   }
+  .advantages::after {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 600px solid transparent;
+    border-bottom: 65px solid #f8f5f2;
+  }
+  .advantages::before {
+    position: absolute;
+    content: "";
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: 600px solid transparent;
+    border-bottom: 65px solid #f8f5f2;
+  }
   .advantages__wrapper {
     display: flex;
     width: 960px;
-  }
-  .advantages__wrapper::after {
-    position: absolute;
-    content: "";
-    bottom: -41px;
-    left: -120px;
-    height: 68px;
-    width: 1220px;
-    background: url(../img/corner-light-desktop.png);
-    background-repeat: no-repeat;
   }
   .advantages__list {
     display: flex;
@@ -840,13 +870,16 @@ input[type="radio"].visually-hidden {
   width: 320px;
   margin: 0 auto;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f8f5f2;
 }
 
 .news__title {
-  margin: 0;
-  padding: 0;
   text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 40px 0 20px 0;
 }
 
 .news__list {
@@ -855,9 +888,72 @@ input[type="radio"].visually-hidden {
 }
 
 .news__item {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  padding: 33px 20px 18px 20px;
+  padding: 20px;
+}
+
+.news__item::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 20px;
+  width: 280px;
+  height: 1px;
+  background-color: #4a4a4a;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+.news__date {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 10px;
+  height: 50px;
+  width: 50px;
+  color: #ffffff;
+  background-color: #000000;
+  z-index: 3;
+}
+
+.news__date::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  border: 25px solid transparent;
+  border-bottom: 14px solid #000000;
+  transform: rotate(180deg);
+  z-index: -2;
+}
+
+.news__day {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.news__text {
+  width: 210px;
+  margin: 0;
+}
+
+.news__to-all {
+  display: block;
+  padding: 14px 0;
+  width: 280px;
+  margin: 0 auto;
+  border: 1px solid #e5ddd5;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
