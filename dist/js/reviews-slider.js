@@ -12,17 +12,17 @@ function bindClickReviews(i) {
   return function() {
       console.log("you clicked region number " + i);
       if (i == 0) {
-      travis.style.display = "inline-flex";
+      travis.style.display = "flex";
       john.style.display = "none";
       ivan.style.display = "none";
     } else if (i == 1) {
       travis.style.display = "none";
-      john.style.display = "inline-flex";
+      john.style.display = "flex";
       ivan.style.display = "none";
     } else if (i == 2) {
       travis.style.display = "none";
       john.style.display = "none";
-      ivan.style.display = "inline-flex";
+      ivan.style.display = "flex";
     }
   };
 }
@@ -36,7 +36,7 @@ sliderToggles.forEach((sliderToggle) => {
     notCurrent.forEach((notCurrent) => {
       notCurrent.classList.remove("slider__toggle-reviews--active");
     });
-    
+
     sliderToggle.classList.add("slider__toggle-reviews--active");
 
     if (sliderToggle.parentElement.classList.contains("reviews__toggles")) {
