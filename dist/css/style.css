@@ -1141,7 +1141,7 @@ input[type="radio"].visually-hidden {
   display: none;
 }
 
-.rewiews__author-wrapper {
+.reviews__author-wrapper {
   width: 200px;
   padding-left: 20px;
 }
@@ -1239,7 +1239,7 @@ input[type="radio"].visually-hidden {
     margin: 0 auto;
     padding: 30px 0;
   }
-  .rewiews__author-wrapper {
+  .reviews__author-wrapper {
     width: 360px;
   }
   .reviews__text {
@@ -1338,12 +1338,59 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 1200px) {
   .reviews {
+    width: 100%;
+  }
+  .reviews__wrapper {
     width: 960px;
     margin: 0 auto;
+    padding-bottom: 100px;
+  }
+  .reviews__author-wrapper {
+    width: 500px;
+    margin: auto 60px;
+    padding: 0;
+  }
+  .reviews__author-image {
+    width: auto;
+    height: auto;
+    border-radius: 0%;
+  }
+  .reviews__list {
+    width: 820px;
+    margin-top: 50px;
   }
   .reviews__item {
-    margin: 0;
-    padding: 46px 0;
+    padding: 0;
+    width: 820px;
+  }
+  .reviews__title {
+    padding: 52px 0 0 80px;
+  }
+  .reviews__right {
+    top: 48px;
+  }
+  .reviews__toggles {
+    position: inherit;
+    top: 40px;
+    left: 0px;
+    padding: 0 10px;
+    background-color: transparent;
+  }
+  .reviews__next {
+    top: 132px;
+    height: 194px;
+  }
+  .reviews__next::after {
+    top: 80px;
+    right: 12px;
+  }
+  .reviews__prev {
+    top: 132px;
+    height: 194px;
+  }
+  .reviews__prev::after {
+    top: 80px;
+    left: 12px;
   }
 }
 
