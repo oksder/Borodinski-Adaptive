@@ -30,13 +30,18 @@ function bindClickReviews(i) {
 sliderToggles.forEach((sliderToggle) => {
   sliderToggle.addEventListener("click", function() {
 
-    var notCurrent = document.querySelectorAll(".slider__toggle--active");
+    var notCurrent = document.querySelectorAll(".slider__toggle-advantages--active");
 
     notCurrent.forEach((notCurrent) => {
-      notCurrent.classList.remove("slider__toggle--active");
+      notCurrent.classList.remove("slider__toggle-advantages--active");
     });
 
-    sliderToggle.classList.add("slider__toggle--active");
+    sliderToggle.classList.add("slider__toggle--advantages--active");
+
+    if (sliderToggle.parentElement.classList.contains("advantages__toggles")) {
+      sliderToggle.classList.add("slider__toggle-advantages--active");
+    }
+
 
     bindClickReviews(i);
   });

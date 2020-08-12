@@ -706,7 +706,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
 }
 
-.slider__toggle--active {
+.slider__toggle-advantages--active {
   text-align: center;
   margin: 0;
   cursor: pointer;
@@ -1073,19 +1073,126 @@ input[type="radio"].visually-hidden {
 }
 
 .reviews {
+  position: relative;
   width: 320px;
   margin: 0 auto;
+  background-color: #f8f5f2;
+  color: #000000;
+}
+
+.reviews::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 320px;
+  height: 1px;
+  background-color: #4a4a4a;
+  background-repeat: no-repeat;
+  opacity: 0.1;
+}
+
+.reviews__wrapper {
+  position: relative;
+}
+
+.reviews__wrapper::after {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 160px solid transparent;
+  border-bottom: 35px solid #292929;
+}
+
+.reviews__wrapper::before {
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-right: 160px solid transparent;
+  border-bottom: 35px solid #292929;
 }
 
 .reviews__title {
   margin: 0;
-  padding: 0;
+  padding: 60px 0 30px 0;
   text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .reviews__item {
+  display: flex;
   margin: 0;
-  padding: 32px 38px 53px 20px;
+  padding: 0 20px;
+}
+
+.slider__item--john {
+  display: none;
+}
+
+.slider__item--ivan {
+  display: none;
+}
+
+.rewiews__author-wrapper {
+  width: 200px;
+  padding-left: 20px;
+}
+
+.reviews__author-name {
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 700px;
+}
+
+.reviews__text {
+  margin: 0;
+  padding: 10px 0 25px 0;
+}
+
+.reviews__right {
+  display: none;
+}
+
+.reviews__prev {
+  display: none;
+}
+
+.reviews__next {
+  display: none;
+}
+
+.reviews__toggles {
+  text-align: center;
+  outline: none;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.slider__toggle-reviews {
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  height: 16px;
+  width: 6px;
+  margin: 0 8px;
+  transform: rotate(45deg);
+  background-color: transparent;
+  border: solid 2px #8f8f8f;
+  outline: none;
+  display: inline-block;
+}
+
+.slider__toggle-reviews--active {
+  background-color: #292929;
+  border-color: #292929;
 }
 
 @media (min-width: 768px) {
