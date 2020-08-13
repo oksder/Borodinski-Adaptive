@@ -1,6 +1,6 @@
 <svg>
 
-  <symbol id="facebook" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px"
+  <symbol id="facebook" width="36" height="36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  x="0px" y="0px"
      viewBox="0 0 512 512" xml:space="preserve">
      <g fill="#ffffff">
      <path d="M122.29,149.5H408.9v60.66H122.29V149.5z M183.02,100.34c0-32.08,11.69-56.08,35.06-72
@@ -9,7 +9,7 @@
      </g>
    </symbol>
 
-  <symbol id="instagram" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" >
+  <symbol id="instagram" width="36" height="36"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" >
     <g fill="#ffffff">
     <path d="M480,0H32C14.31,0,0,14.31,0,32v448c0,17.69,14.31,32,32,32h448c17.69,0,32-14.31,32-32V32C512,14.31,497.69,0,480,0z
     	 M192,256c0,0,5.06-64,64-64c58.94,0,64,64,64,64s1.84,64-64,64C190.16,320,192,256,192,256z M448,448H64V224h64h4.53
@@ -18,7 +18,7 @@
      </g>
    </symbol>
 
-   <symbol id="vkontakte" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+   <symbol id="vkontakte" width="36" height="36"  version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
    	 viewBox="0 0 512 512" xml:space="preserve">
      <g fill="#ffffff">
  		<path d="M103.42,27.24h87.75v470.07h-87.75V27.24z M141.85,411.96h148.59c20.06,0,35.6-4.9,46.59-14.71
