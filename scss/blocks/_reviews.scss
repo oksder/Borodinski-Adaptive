@@ -43,7 +43,6 @@
     background-repeat: no-repeat;
     opacity: 0.1;
   }
-
 }
 
 .reviews__title {
@@ -72,6 +71,11 @@
 .reviews__author-wrapper {
   width: 200px;
   padding-left: 20px;
+}
+
+.reviews__author-image {
+  border-radius: 50%;
+  margin: 0;
 }
 
 .reviews__author-name {
@@ -172,12 +176,19 @@
     position: relative;
     justify-content: center;
     width: 540px;
+    height: 122px;
     margin: 0 auto;
     padding: 30px 0;
   }
 
   .reviews__author-wrapper {
     width: 360px;
+  }
+
+  .reviews__author-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
   }
 
   .reviews__text {
@@ -232,7 +243,7 @@
     padding: 0;
     margin: 0;
     width: 50px;
-    height: 185px;
+    height: 184px;
     border: solid 1px #e5ddd5;
     outline: none;
     background-color: transparent;
@@ -240,8 +251,8 @@
       &::after {
         content:"";
         position: absolute;
-        top: 75px;
-        left: 14px;
+        top: 80px;
+        left: 12px;
         width: 0;
         height: 0;
         border-top: 10px solid $bg-lightgrey;
@@ -259,7 +270,7 @@
     padding: 0;
     margin: 0;
     width: 50px;
-    height: 185px;
+    height: 184px;
     border: solid 1px #e5ddd5;
     outline: none;
     background-color: transparent;
@@ -267,8 +278,8 @@
       &::after {
         content:"";
         position: absolute;
-        top: 75px;
-        right: 14px;
+        top: 80px;
+        right: 12px;
         width: 0;
         height: 0;
         border-top: 10px solid $bg-lightgrey;
@@ -276,12 +287,6 @@
         border-bottom: 10px solid $bg-lightgrey;
       }
     }
-
-  .reviews__author-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -315,10 +320,15 @@
   .reviews__item {
     padding: 0;
     width: 820px;
+    height: 150px;
   }
 
   .reviews__title {
     padding: 52px 0 0 80px;
+  }
+
+  .reviews__author-picture {
+    margin: 0;
   }
 
   .reviews__right {
@@ -335,20 +345,20 @@
 
   .reviews__next {
     top: 132px;
-    height: 194px;
+    height: 151px;
 
     &::after {
-      top: 80px;
+      top: 60px;
       right: 12px;
     }
   }
 
   .reviews__prev {
     top: 132px;
-    height: 194px;
+    height: 151px;
 
     &::after {
-      top: 80px;
+      top: 60px;
       left: 12px;
     }
   }
