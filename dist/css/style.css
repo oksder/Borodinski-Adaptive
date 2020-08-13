@@ -1411,7 +1411,31 @@ input[type="radio"].visually-hidden {
 }
 
 .page-footer__contacts {
-  padding: 35px 55px 26px 55px;
+  width: 270px;
+  margin: 0 auto;
+  padding: 35px 0 24px 0;
+}
+
+.contacts__text {
+  margin: 0;
+  padding: 25px;
+}
+
+.contacts__phone {
+  width: 280px;
+  padding: 5px 53px;
+  font-weight: 700;
+  color: #ffffff;
+  border: solid 1px #3e3e3e;
+}
+
+.contacts__phone:hover, .contacts__phone:focus {
+  border: solid 1px #515151;
+}
+
+.contacts__phone:active {
+  background-color: #252525;
+  color: #808080;
 }
 
 .social__title {
@@ -1423,14 +1447,48 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   padding: 0;
   margin: 0;
+  width: 320px;
   list-style: none;
+}
+
+.social__item {
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 110px;
+  padding: 0;
+  border: solid 1px #3e3e3e;
+}
+
+.social__link--vkontakte {
+  margin: auto;
 }
 
 .page-footer__copyright {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 30px 0 40px 0;
+  padding: 30px 0 24px 0;
+}
+
+.copyright__link {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 5px 0;
+  color: #ffffff;
+  border: solid 1px #3e3e3e;
+}
+
+.copyright__link:hover, .copyright__link:focus {
+  border: solid 1px #515151;
+}
+
+.copyright__link:active {
+  background-color: #252525;
+  color: #808080;
 }
 
 @media (min-width: 768px) {

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 23 26">
+  <symbol id="vkontakte" viewBox="0 0 23 26">
+    <g fill="#ffffff">
+      <image width="23" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAaCAYAAABctMd+AAAA+ElEQVRIibWVjQ2CMBCFn8YFWAFHcAUdAUfAEVgBR8ARZAQZQUfQFRzhzDMtYiMF2+tLmpa0/bjcXyEijYSLdysRyUQE7oiFD1W58CX0VAM4D2macKoAUKaCU9u58DWAhTP2AB6eOxu7WAVY1gJ4ArhMHQx1i8/yWyw89+x1MXBmQzOyR5ed7MeUz+9//LQ1we6llYpHFwxFeAVAzKwOt6pNimYp4DAVWs+B/6pQjp0J4JiYUXmo5Z0JYOc5U8S6xQdP4nM1eOnbDIUTep3qMZrl/wVmd0zhc/b6AxIElGDWwLvfa8LZall0/WMR8sy5QFrJmVZ/BOAFmBXOU/Un1gIAAAAASUVORK5CYII="/>
+    </g>
+  </symbol>
+</svg>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="39" viewBox="0 0 18 39">
+  <symbol id="facebook">
+    <g fill="#ffffff">
+    <image width="18" height="39" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAnCAYAAAACeRhJAAAA8ElEQVRIie2WvwrCMBCHP/8gCIqr4OAuCAUnNxdB0N3Vyddy8j0EBycnoQ9QKDpaEARBKoEKpVzSBjKI5AcZepf7mt5dj9TSNKVE82xNgTYwAPqFkEvTwBgDO2BS9iYlHSgAjkCnCkSpLtgawN4GogMtgJENRAda20LQ5CioEHcGQuCZPceo8hfWNTVrKcQg9dEd6GlO8gC6kkPKkUmJzmcLersCaaWqtgFauQ0tw37VpFvBnqhkm5JbVSdXnxa7AkV/fCJVtSCbQV8dDLPoBqwEe2j7r0XAUHI462wP8iAP8qBfAUn3o1lh9Ob1Eq3AB17raHDQfllNAAAAAElFTkSuQmCC"/>
+    </g>
+  </symbol>
+</svg>
+
+
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+  <symbol id="instagram">
+    <g fill="#ffffff">
+    <path d="M480,0H32C14.31,0,0,14.31,0,32v448c0,17.69,14.31,32,32,32h448c17.69,0,32-14.31,32-32V32C512,14.31,497.69,0,480,0z
+    	 M192,256c0,0,5.06-64,64-64c58.94,0,64,64,64,64s1.84,64-64,64C190.16,320,192,256,192,256z M448,448H64V224h64h4.53
+    	c-2.65,10.28-4.53,20.88-4.53,32c0,70.69,57.31,128,128,128c70.69,0,128-57.31,128-128c0-11.13-1.88-21.72-4.53-32H384h64V448z
+    	 M448,160h-96V64h96V160z"/>
+   </g>
+ </symbol>
+</svg>
