@@ -79,11 +79,11 @@
 	height: 18px;
 }
 
-.modal-password {
+.modal__password {
 	position: relative;
 }
 
-.modal-password::after {
+.modal__password::after {
 	content: "";
 
 	position: absolute;
@@ -225,6 +225,103 @@
 	}
 }
 
-.modal__close {
-	display: none;
+@media (min-width: $tablet-width) {
+		@keyframes bounce {
+		0% { transform: translateY(-2000px); }
+		70% { transform: translateY(30px); }
+		90% { transform: translateY(-10px); }
+		100% { transform: translateY(0); }
+	}
+		@keyframes shake {
+		0%, 100% { transform: translateX(2000px); }
+		10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+		20%, 40%, 60%, 80% { transform: translateX(10px); }
+	}
+
+	.modal-error {
+		animation-name: shake;
+		animation-duration: 0.6s;
+	}
+
+	.modal__sign-in {
+		top: 130px;
+		left: 50%;
+		width: 320px;
+		margin-left: -230px;
+		padding: 55px 70px;
+	}
+
+	.modal__title {
+		font-size: 40px;
+	}
+
+	.modal__login-user[type="text"],
+	.modal__login-password[type="password"] {
+		padding: 20px 20px;
+		width: 320px;
+	}
+
+	.modal__login::after {
+    top: 25px;
+    right: 20px;
+	}
+
+	.modal__password::after {
+    top: 25px;
+    right: 20px;
+	}
+
+	.modal__button {
+		display: block;
+	}
+
+	.modal__button--login {
+		width: 320px;
+	}
+
+		.modal__button--close {
+		position: absolute;
+		top: 60px;
+		right: -105px;
+		width: 30px;
+		height: 30px;
+		font-size: 0;
+
+		background-color: transparent;
+		border: 0;
+		outline: none;
+		cursor: pointer;
+
+		&:hover,
+		&:focus {
+			border: none;
+			outline: #000;
+		}
+
+		&:active {
+			background-color: transparent;
+		}
+	}
+
+	.modal__button--close::before,
+	.modal__button--close::after {
+		content: "";
+
+		position: absolute;
+		top: 10px;
+		left: 0px;
+
+		width: 35px;
+		height: 3px;
+
+		background-color: #ffffff;
+	}
+
+	.modal__button--close:before {
+		transform: rotate(45deg);
+	}
+
+	.modal__button--close::after {
+		transform: rotate(-45deg);
+	}
 }
