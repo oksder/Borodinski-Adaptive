@@ -5,14 +5,14 @@ var login = popup.querySelector("[name=login]");
 var password = popup.querySelector("[name=password]");
 var form = popup.querySelector("modal__form");
 var storage = localStorage.getItem("login");
+var navMain = document.querySelector(".main-nav");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
+  navMain.classList.remove("main-nav--opened");
+  navMain.classList.add("main-nav--closed");
   login.focus();
-  if (storage) {
-    login.value = storage;
-  }
 });
 
 popupClose.addEventListener("click", function () {

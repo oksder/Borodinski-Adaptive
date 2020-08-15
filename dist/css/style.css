@@ -1669,6 +1669,7 @@ input[type="radio"].visually-hidden {
   background-color: #f8f5f2;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   display: none;
+  z-index: 3;
 }
 
 .modal-show {
