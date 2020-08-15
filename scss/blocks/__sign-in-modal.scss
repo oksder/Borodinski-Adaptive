@@ -1,0 +1,223 @@
+.modal {
+	position: fixed;
+	color: #000000;
+
+	background-color: $bg-lightgrey;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	// display: none;
+}
+
+.modal__sign-in {
+	top: 142px;
+	left: 50%;
+
+	width: 280px;
+	margin-left: -160px;
+	padding: 30px 20px;
+}
+
+.modal__title {
+	text-align: center;
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+}
+
+.modal__text {
+	text-align: center;
+	margin: 0;
+}
+
+.modal__login-user[type="text"],
+.modal__login-password[type="password"] {
+	box-sizing: border-box;
+	font: inherit;
+	color: #000000;
+	padding: 10px 15px;
+	margin:0;
+	width: 280px;
+
+	background-color: #ffffff;
+	border: 1px solid #d0c7bd;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		border: solid 1px #826550;
+	}
+
+	&:active {
+		outline: 1px solid #826550;
+	}
+}
+
+.modal__login {
+	position: relative;
+}
+
+.modal__login::after {
+	content: "";
+
+	position: absolute;
+	top: 15px;
+	right: 15px;
+
+	background-image: url("../img/user.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	width: 18px;
+	height: 18px;
+}
+
+.modal-password {
+	position: relative;
+}
+
+.modal-password::after {
+	content: "";
+
+	position: absolute;
+	top: 15px;
+	right: 15px;
+
+	background-image: url("../img/lock.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	width: 18px;
+	height: 18px;
+}
+
+.modal__login-checkbox:focus,
+.modal__login-checkbox:hover {
+	color: #663d15;
+}
+
+.modal__remember-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 34px 0;
+}
+
+.modal__login-checkbox {
+  display: block;
+  position: relative;
+	padding-left: 50px;
+	margin: 0;
+  cursor: pointer;
+}
+
+.modal__login-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.modal__checkbox-indicator {
+  position: absolute;
+  top: 0;
+	left: 0;
+  height: 32px;
+  width: 32px;
+  background-color: #ffffff;
+	border: 1px solid #d0c7bd;
+	color: #000;
+}
+
+.modal__login-checkbox input:checked ~ .modal__checkbox-indicator {
+	content: "";
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	background-image: url("../img/tick.svg");
+	background-repeat: no-repeat;
+	background-position: 2px 2px;
+
+	width: 32px;
+	height: 32px;
+}
+
+.modal__login-checkbox input:checked ~ .modal__checkbox-indicator:after {
+  display: block;
+}
+
+.modal__login-checkbox input[type="checkbox"]:focus + .modal__checkbox-indicator{
+	outline: 1px solid #826550;
+}
+
+.modal__login-checkbox:hover input ~ .modal__checkbox-indicator {
+	border: 1px solid #826550;
+}
+
+.modal__login-checkbox input[type="checkbox"]:active + .modal__checkbox-indicator{
+	background-color: #d5c9bd;
+}
+
+.modal__restore {
+	color: #000000;
+	text-decoration: underline;
+
+	&:focus,
+	&:hover {
+		color: #663d15;
+		text-decoration: none;
+	}
+}
+
+.modal__button {
+	display: flex;
+	justify-content: space-between;
+}
+
+.modal__button--login {
+	text-transform: uppercase;
+	font-weight: 700;
+	width: 130px;
+	padding: 14px 0;
+	color: #ffffff;
+	background-color: #826550;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		background-color: #6a4d38;
+	}
+
+	&:active {
+		color: #978374;
+	}
+}
+
+.modal__button--close {
+	text-transform: uppercase;
+	font-weight: 700;
+	width: 130px;
+	padding: 14px 0;
+	background-color: transparent;
+	border: solid 1px #d0c7bd;
+	outline: none;
+	cursor: pointer;
+
+	&:hover,
+	&:focus {
+		border: solid 1px #826550;
+	}
+
+	&:active {
+		color: #958c84;
+		background-color: #d5c9bd;
+	}
+}
+
+.modal__close {
+	display: none;
+}
