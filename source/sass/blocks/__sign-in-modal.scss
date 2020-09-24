@@ -98,11 +98,6 @@
 	height: 18px;
 }
 
-.modal__login-checkbox:focus,
-.modal__login-checkbox:hover {
-	color: #663d15;
-}
-
 .modal__remember-wrapper {
 	display: flex;
 	justify-content: space-between;
@@ -112,12 +107,15 @@
 .modal__login-checkbox {
   display: block;
   position: relative;
-	padding-left: 50px;
-	margin: 0;
+  padding-left: 50px;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.modal__login-checkbox input {
+.modal__login-input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
@@ -125,46 +123,44 @@
   width: 0;
 }
 
-.modal__checkbox-indicator {
+.modal__checkmark {
   position: absolute;
-  top: 0;
-	left: 0;
-  height: 32px;
-  width: 32px;
+  top: -4px;
+  left: 0;
+  height: 33px;
+  width: 33px;
   background-color: #ffffff;
-	border: 1px solid #d0c7bd;
-	color: #000;
+	border: solid 1px #d5c9bd;
 }
 
-.modal__login-checkbox input:checked ~ .modal__checkbox-indicator {
-	content: "";
-
-	position: absolute;
-	top: 0px;
-	left: 0px;
-
-	background-image: url("../img/tick.svg");
-	background-repeat: no-repeat;
-	background-position: 2px 2px;
-
-	width: 32px;
-	height: 32px;
+.modal__login-checkbox:hover .modal__login-input ~ .modal__checkmark {
+  border: solid 1px #826550;
 }
 
-.modal__login-checkbox input:checked ~ .modal__checkbox-indicator:after {
+.modal__login-input:checked ~ .modal__checkmark {
+  background-color: #d5c9bd;
+}
+
+.modal__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.modal__login-input:checked ~ .modal__checkmark:after {
   display: block;
 }
 
-.modal__login-checkbox input[type="checkbox"]:focus + .modal__checkbox-indicator{
-	outline: 1px solid #826550;
-}
-
-.modal__login-checkbox:hover input ~ .modal__checkbox-indicator {
-	border: 1px solid #826550;
-}
-
-.modal__login-checkbox input[type="checkbox"]:active + .modal__checkbox-indicator{
-	background-color: #d5c9bd;
+.modal__login-checkbox .modal__checkmark:after {
+  left: 13px;
+  top: 2px;
+  width: 7px;
+  height: 22px;
+  border: solid #000000;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .modal__restore {
