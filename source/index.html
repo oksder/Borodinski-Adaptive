@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <title>Barbershop "Borodinski"</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,7 +14,7 @@
     <include src="build/img/sprite.svg"></include>
   </div>
   <header class="page-header">
-    <a href="#" class="page-header__logo">
+    <a href="index.html" class="page-header__logo">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
         <source media="(min-width: 769px)" srcset="img/logotype-tablet.svg">
@@ -74,23 +75,21 @@
         <ul class="advantages__list slider__list">
           <li class="advantages__item advantages__item--fast slider__item--fast">
 
-            <img class="advantages__icon" src="img/fast.svg" width="95" height="94">
+            <img class="advantages__icon" src="img/fast.svg" width="95" height="94" alt="Image of scissors">
             <div class="advantages-info__wrapper">
               <h3 class="advantages__title">Fast</h3>
               <p class="advantages__description">We are quick at what we do! Two hours will fly fast and you will have brand new haircut!</p>
             </div>
           </li>
-        </ul>
           <li class="advantages__item advantages__item--cool slider__item--cool">
-            <img class="advantages__icon" src="img/cool.svg" width="95" height="88">
+            <img class="advantages__icon" src="img/cool.svg" width="95" height="88" alt="Image of chair">
             <div class="advantages-info__wrapper">
               <h3 class="advantages__title">Cool</h3>
               <p class="advantages__description">Forget about how you had your haircuts before! We will make a movie star from you (at least visually)!</p>
             </div>
           </li>
-        </ul>
           <li class="advantages__item advantages__item--expensive slider__item--expensive">
-            <img class="advantages__icon" src="img/expensive.svg" width="95" height="91">
+            <img class="advantages__icon" src="img/expensive.svg" width="95" height="91" alt="Image of pole">
             <div class="advantages-info__wrapper">
               <h3 class="advantages__title">Expensive</h3>
               <p class="advantages__description">Our masters - are professionals, so the haircut cannot be cheap. But it is worth it!</p>
@@ -108,18 +107,18 @@
       <div class="news__wrapper">
         <h2 class="news__title">News and deals</h2>
         <ul class="news__list">
-          <a href="#"><li class="news__item">
+          <li class="news__item">
             <time class="news__date" datetime="2017-09-29"><b class="news__day">29</b> Sept</time>
             <p class="news__text">We were finally brought in a Jägermaster! Now you can skip a cup while having a haircut.</p>
-          </li></a>
-          <a href="#"><li class="news__item">
+          </li>
+          <li class="news__item">
             <time class="news__date" datetime="2017-09-19"><b class="news__day">19</b> Sept</time>
             <p class="news__text">Holder of many awards, Boris "Razor" joined our team. Hurry up and book an appointment!</p>
-          </li></a>
-          <a href="#"><li class="news__item news__item--9">
+          </li>
+          <li class="news__item news__item--9">
             <time class="news__date" datetime="2017-09-09"><b class="news__day">9</b> Sept</time>
             <p class="news__text">Everything rises in price, except our haircuts! How so? Come, cut your hair and find out what the catch is!</p>
-          </li></a>
+          </li>
         </ul>
         <button class="news__to-all button" type="button">Show all</button>
       </div>
@@ -254,5 +253,7 @@
   <script src="js/show-all-button.js"></script>
   <script src="js/reviews-slider.js"></script>
   <script src="js/login-popup.js"></script>
+  <script src="js/picturefill.js"></script>
+  <script src="js/svgforeverybody.js"></script>
 </body>
 </html>
