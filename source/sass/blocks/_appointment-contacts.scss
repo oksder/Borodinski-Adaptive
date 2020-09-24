@@ -1,0 +1,101 @@
+.appointment {
+  width: 100%;
+  margin: 0 auto;
+  color: #000000;
+  background-color: $bg-lightgrey;
+}
+
+.appointment__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.appointment__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0;
+  padding: 30px 0;
+}
+
+.appointment__button {
+  display: none;
+}
+
+.appointment-details__item {
+  margin: 10px 0;
+}
+
+.appointment-details__input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  width: 88%;
+  padding: 10px 18px;
+  border: none;
+  outline: solid 1px #e5ddd5;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: solid 1px #d5c9bd;
+  }
+
+  &:active {
+   outline: solid 1px #d5c9bd;
+ }
+}
+
+.appointment-contacts {
+  margin: 35px 0;
+}
+
+.appointment-contacts__item {
+  margin: 10px 0;
+}
+
+.appointment-contacts__input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  width: 88%;
+  padding: 10px 18px;
+  border: none;
+  outline: solid 1px #e5ddd5;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: solid 1px #d5c9bd;
+  }
+
+  &:active {
+   outline: solid 1px #d5c9bd;
+ }
+}
+
+.appointment-contacts__comment {
+  padding-bottom: 20px;
+}
+
+.appointment-contacts__comment-input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 30px;
+  width: 88%;
+  padding: 10px 18px;
+  border: none;
+  outline: solid 1px #e5ddd5;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: solid 1px #d5c9bd;
+  }
+
+  &:active {
+   outline: solid 1px #d5c9bd;
+ }
+}

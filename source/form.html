@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="Description" content="Barbershop Borodinski">
+  <meta charset="UTF-8">
+  <title>Barbershop "Borodinski"</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <header class="page-header">
+    <a href="index.html" class="page-header__logo">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 769px)" srcset="img/logotype-tablet.svg">
+        <img class="page-header__image" src="img/logotype-mobile.svg" width="226" height="30" alt="Borodinski Logo">
+      </picture>
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item "><a href="index.html">Main</a></li>
+          <li class="site-list__item"><a href="works.html">Our projects</a></li>
+          <li class="site-list__item site-list__item--active"><a>Appointment</a></li>
+          <li class="site-list__item"><a href="#">Contacts</a></li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item"><a href="login.html" class="user-list__login">
+            <svg class="user-list__login-icon" width="16" height="16">
+                <use xlink:href="#icon-login"></use>
+            </svg>
+            Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="appointment">
+      <div class="appointment__wrapper">
+        <h2 class="appointment__title">Make an appointment for a haircut</h2>
+        <a href="index.thml" class="appointment__button">Main page</a>
+        <form class="appointment-details" method="post" action="https://echo.htmlacademy.ru">
+          <p class="appointment-details__item">
+            <input class="appointment-details__input" type="text" id="surname" name="surname" placeholder="Surname" required>
+          </p>
+          <p class="appointment-details__item">
+            <input class="appointment-details__input" type="text" id="name" name="name" placeholder="Name" required>
+          </p>
+        </form>
+        <form class="appointment-contacts">
+          <p class="appointment-contacts__item">
+            <input class="appointment-contacts__input" type="tel" id="tel" name="tel" placeholder="Contact telephone" required>
+          </p>
+          <p class="appointment-contacts__item">
+            <input class="appointment-contacts__input" type="email" id="email" name="email" placeholder="Contact e-mail" required>
+          </p>
+        </form>
+        <form class="appointment-contacts__comment">
+          <textarea class="appointment-contacts__comment-input" rows="4" cols="50" name="comment" form="comment-form" placeholder="Additionall information for your master"></textarea>
+        </form>
+      </div>
+    </section>
+    <section class="beard">
+      <div class="beard__wrapper">
+        <h2 class="beard__title">Choose beard type:</h2>
+        <label class="beard__radio">
+          <input class="beard__radio-input" type="radio" checked="checked" name="radio">
+          Admiral
+          <span class="beard__checkmark"></span>
+        </label>
+        <label class="beard__radio">
+          <input class="beard__radio-input" type="radio" name="radio">
+          Woodman
+          <span class="beard__checkmark"></span>
+        </label>
+        <label class="beard__radio">
+          <input class="beard__radio-input" type="radio" name="radio">
+          Polar explorer
+          <span class="beard__checkmark"></span>
+        </label>
+        <label class="beard__radio">
+          <input class="beard__radio-input" type="radio" name="radio">
+          King
+          <span class="beard__checkmark"></span>
+        </label>
+        <label class="beard__radio">
+          <input class="beard__radio-input" type="radio" name="radio">
+          Wiseacre
+          <span class="beard__checkmark"></span>
+        </label>
+      </div>
+    </section>
+    <section class="other">
+      <div class="other__wrapper">
+        <h2 class="other__title">Other services:</h2>
+        <form class="other__form">
+          <label class="other__label">
+            <input class="other__input" type="checkbox" checked="checked">
+            Dye beard
+            <span class="other__checkmark"></span>
+          </label>
+          <label class="other__label">
+            <input class="other__input" type="checkbox" checked="checked">
+            Shape a mustache
+            <span class="other__checkmark"></span>
+          </label>
+          <label class="other__label">
+            <input class="other__input" type="checkbox">
+            Comb your beard
+            <span class="other__checkmark"></span>
+          </label>
+          <label class="other__label">
+            <input class="other__input" type="checkbox">
+            Trimming hair
+            <span class="other__checkmark"></span>
+          </label>
+          <label class="other__label">
+            <input class="other__input" type="checkbox">
+            Remove gray hair
+            <span class="other__checkmark"></span>
+          </label>
+          <label class="other__label">
+            <input class="other__input" type="checkbox">
+            Polish bald head
+            <span class="other__checkmark"></span>
+          </label>
+        </form>
+        <div class="other-button__wrapper">
+          <button class="other-button__button" type="submit">Send request</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__title">Barbershop Borodinski</b>
+        <p class="contacts__text">Saint-Petersburg, Bolshaya Konyushenaya Street 19/8<br>
+        <a href="tel:+78125556666" class="contacts__phone">
+          <span class="contacts__phone-mobile">Tel.:</span> +7 (812) 555-66-66
+        </a>
+      </div>
+      <div class="page-footer__social social">
+        <b class="social__title">Lets be friends!</b>
+        <ul class="social__list">
+          <li class="social__item"><a href="#" class="social__link">
+            <svg class="social__item-icon" width="36" height="36">
+              <use xlink:href="#icon-vkontakte"></use>
+            </svg>
+            <span class="visually-hidden">Vkontakte</span></a></li>
+          <li class="social__item"><a href="#" class="social__link">
+            <svg class="social__item-icon" width="36" height="36">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+            <span class="visually-hidden">Facebook</span></a></li>
+          <li class="social__item"><a href="#" class="social__link">
+            <svg class="social__item-icon" width="36" height="36">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
+            <span class="visually-hidden">Instagram</spn></a></li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Designed by:</b>
+        <a href="https://htmlacademy.ru" class="button copyright__link">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+  <section class="modal modal__sign-in">
+  <h2 class="modal__title">Please sign in</h2>
+  <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
+    <p class="modal__text">Enter your login and password to enter</p>
+    <p class="modal__login">
+      <label class="visually-hidden" for="user-login">Login</label>
+      <input class="modal__login-user" id="user-login" type="text" name="login" placeholder="Login">
+    </p>
+    <p class="modal__password">
+      <label class="visually-hidden" for="user-password">Password</label>
+      <input class="modal__login-password" id="user-password" type="password" name="password" placeholder="Password">
+    </p>
+    <p class="modal__remember-wrapper">
+      <label class="modal__login-checkbox">
+        <input class="modal__login-input" type="checkbox">
+        Remember me
+        <span class="modal__checkmark"></span>
+      </label>
+      <a class="modal__restore" href= "#">Forgot my password!</a>
+    </p>
+    <div class="modal__button">
+      <button class="modal__button--login" type="submit">Sign In</button>
+      <button class="modal__button--close" type="button">Close</button>
+    </div>
+  </form>
+</section>
+<section class="modal-failure">
+  <h2 class="modal-failure__title">Failure</h2>
+  <p class="modal-failure__description">Something went wrong. Check the fields highlighted in red.</p>
+  <div class="modal-failure__button-wrapper">
+    <button class="modal-failure__button" type="submit">OK</button>
+  </div>
+</section>
+<section class="modal-success">
+  <h2 class="modal-success__title">Success</h2>
+  <p class="modal-success__description">Your application has been sent. Please wait, we will contact you as soon as possible.</p>
+  <div class="modal-success__button-wrapper">
+    <button class="modal-success__button" type="submit">OK</button>
+  </div>
+</section>
+  <script src="js/nav-toggle.js"></script>
+  <script src="js/login-popup.js"></script>
+  <script src="js/picturefill.js"></script>
+  <script src="js/svgforeverybody.js"></script>
+</body>
+</html>
