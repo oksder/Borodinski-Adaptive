@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="Description" content="Barbershop Borodinski">
+  <meta charset="UTF-8">
+  <title>Barbershop "Borodinski"</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+  <header class="page-header">
+    <a href="index.html" class="page-header__logo  page-header__logo--innear">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 769px)" srcset="img/logotype-tablet.svg">
+        <img class="page-header__image" src="img/logotype-mobile.svg" width="226" height="30" alt="Borodinski Logo">
+      </picture>
+    </a>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Open menu</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item "><a href="index.html">Main</a></li>
+          <li class="site-list__item site-list__item--active"><a>Our projects</a></li>
+          <li class="site-list__item "><a href="form.html">Appointment</a></li>
+          <li class="site-list__item"><a href="#">Contacts</a></li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item"><a href="login.html" class="user-list__login">
+            <svg class="user-list__login-icon" width="16" height="16">
+                <use xlink:href="#icon-login"></use>
+            </svg>
+            Login</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="works">
+      <div class="works__wrapper">
+        <h2 class="works__title">Our works</h2>
+        <a href="index.html" class="works__button appointment__button">Main page</a>
+        <div class="works__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/work-1-desktop.webp" type="image/webp">
+            <source media="(min-width: 1200px)" srcset="img/work-1-desktop.jpg" type="image/jpeg">
+            <source media="(min-width: 769px)" srcset="img/work-1-tablet.webp" type="image/webp">
+            <source media="(min-width: 769px)" srcset="img/work-1-tablet.jpg" type="image/jpeg">
+            <source srcset="img/work-1-mobile.jpg" type="image/jpeg">
+            <img class="works__image works-item__image--desktop" src="img/work-1-mobile.webp" type="image/webp" alt="Image of our work">
+          </picture>
+          <span class="works__latest">Work of the month</span>
+          <h3 class="works__name">Lzhepyotr Mchislavsky</h3>
+          <p class="works__review">Cut my hair at so many places, but no one else can do what you can! Thanks again and see you soon!</p>
+          <ul class="works__option">
+            <li class="works__option-list">
+              <svg class="works__option-icon" width="21" height="20">
+                <use xlink:href="#icon-scissors"></use>
+              </svg>
+              <p class="works__option-item ">Haircut</p>
+            </li>
+            <li class="works__option-list">
+              <svg class="works__option-icon" width="23" height="21">
+                <use xlink:href="#icon-beard"></use>
+              </svg>
+              <p class="works__option-item ">Shaving</p>
+            </li>
+            <li class="works__option-list">
+              <svg class="works__option-icon" width="42" height="12">
+                <use xlink:href="#icon-mustache"></use>
+              </svg>
+              <p class="works__option-item ">Mustache</p>
+            </li>
+          </ul>
+        </div>
+        <div class="works__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/work-2-desktop.webp" type="image/webp">
+            <source media="(min-width: 1200px)" srcset="img/work-2-desktop.jpg" type="image/jpeg">
+            <source media="(min-width: 769px)" srcset="img/work-2-tablet.webp" type="image/webp">
+            <source media="(min-width: 769px)" srcset="img/work-2-tablet.jpg" type="image/jpeg">
+            <source srcset="img/work-2-mobile.jpg" type="image/jpeg">
+            <img class="works__image" src="img/work-2-mobile.webp" type="image/webp" alt="Image of our work">
+          </picture>
+          <h3 class="works__name">Sasha Maltsev</h3>
+          <p class="works__review">I asked to make me look younger! Who's going to say that I am 45 now?</p>
+          <ul class="works__option">
+            <li class="works__option-list">
+              <svg class="works__option-icon" width="21" height="20">
+                <use xlink:href="#icon-scissors"></use>
+              </svg>
+              <p class="works__option-item ">Haircut</p>
+            </li>
+          </ul>
+        </div>
+        <div class="works__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/work-3-desktop.webp" type="image/webp">
+            <source media="(min-width: 1200px)" srcset="img/work-3-desktop.jpg" type="image/jpeg">
+            <source media="(min-width: 769px)" srcset="img/work-3-tablet.webp" type="image/webp">
+            <source media="(min-width: 769px)" srcset="img/work-3-tablet.jpg" type="image/jpeg">
+            <source srcset="img/work-3-mobile.jpg" type="image/jpeg">
+            <img class="works__image" src="img/work-3-mobile.webp" type="image/webp" alt="Image of our work">
+          </picture>
+          <h3 class="works__name">Vladimir Ivanch</h3>
+          <p class="works__review">Ready for the winter season!</p>
+          <ul class="works__option">
+            <li class="works__option-list">
+              <svg class="works__option-icon" width="23" height="21">
+                <use xlink:href="#icon-beard"></use>
+              </svg>
+              <p class="works__option-item ">Shaving</p>
+            </li>
+            <li class="works__option-list">
+              <svg class="works__option-icon" width="42" height="12">
+                <use xlink:href="#icon-mustache"></use>
+              </svg>
+              <p class="works__option-item ">Mustache</p>
+            </li>
+          </ul>
+        </div>
+        <div class="works__item">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/work-4-desktop.webp" type="image/webp">
+            <source media="(min-width: 1200px)" srcset="img/work-4-desktop.jpg" type="image/jpeg">
+            <source media="(min-width: 769px)" srcset="img/work-4-tablet.webp" type="image/webp">
+            <source media="(min-width: 769px)" srcset="img/work-4-tablet.jpg" type="image/jpeg">
+            <source srcset="img/work-4-mobile.jpg" type="image/jpeg">
+            <img class="works__image" src="img/work-4-mobile.webp" type="image/webp" alt="Image of our work">
+          </picture>
+          <h3 class="works__name">Vinston Siny</h3>
+          <p class="works__review">As soon as my hair gets long, straight running to Borodinsky!</p>
+          <ul class="works__option">
+            <li class="works__option-list">
+              <svg class="works__option-icon" width="21" height="20">
+                <use xlink:href="#icon-scissors"></use>
+              </svg>
+              <p class="works__option-item ">Haircut</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="prices">
+      <div class="prices__wrapper">
+        <h2 class="prices__title">Price-list</h2>
+        <table class="prices__table">
+          <tr>
+            <th class="prices__table-number">1</th>
+            <th class="prices__table-service">Classic haircut</th>
+            <th class="prices__table-extra">With head wash</th>
+            <th class="prices__table-price">1 500₽</th>
+          </tr>
+          <tr>
+            <th class="prices__table-number">2</th>
+            <th class="prices__table-service">Modern version</th>
+            <th class="prices__table-extra">With head wash</th>
+            <th class="prices__table-price">1 500₽</th>
+          </tr>
+          <tr>
+            <th class="prices__table-number">3</th>
+            <th class="prices__table-service">Individual approach</th>
+            <th class="prices__table-extra">With head wash</th>
+            <th class="prices__table-price">2 000₽</th>
+          </tr>
+          <tr>
+            <th class="prices__table-number">4</th>
+            <th class="prices__table-service">Beard shaving</th>
+            <th class="prices__table-extra">Without wash</th>
+            <th class="prices__table-price">500₽</th>
+          </tr>
+          <tr>
+            <th class="prices__table-number">5</th>
+            <th class="prices__table-service">Head shaving</th>
+            <th class="prices__table-extra">With head wash</th>
+            <th class="prices__table-price">1 000₽</th>
+          </tr>
+        </table>
+        <div class="prices-clock">
+          <svg class="prices-clock__icon">
+            <use xlink:href="#icon-clock"></use>
+          </svg>
+          <p class="prices-clock__description">From 10:00 to 14:00 you can get 20% discount</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__title">Barbershop Borodinski</b>
+        <p class="contacts__text">Saint-Petersburg, Bolshaya Konyushenaya Street 19/8<br>
+        <a href="tel:+78125556666" class="contacts__phone">
+          <span class="contacts__phone-mobile">Tel.:</span> +7 (812) 555-66-66
+        </a>
+      </div>
+      <div class="page-footer__social social">
+        <b class="social__title">Lets be friends!</b>
+        <ul class="social__list">
+          <li class="social__item"><a href="#" class="social__link">
+            <svg class="social__item-icon" width="36" height="36">
+              <use xlink:href="#icon-vkontakte"></use>
+            </svg>
+            <span class="visually-hidden">Vkontakte</span></a></li>
+          <li class="social__item"><a href="#" class="social__link">
+            <svg class="social__item-icon" width="36" height="36">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+            <span class="visually-hidden">Facebook</span></a></li>
+          <li class="social__item"><a href="#" class="social__link">
+            <svg class="social__item-icon" width="36" height="36">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
+            <span class="visually-hidden">Instagram</spn></a></li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Designed by:</b>
+        <a href="https://htmlacademy.ru" class="button copyright__link">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+  <section class="modal modal__sign-in">
+  <h2 class="modal__title">Please sign in</h2>
+  <form class="modal__form" method="post" action="https://echo.htmlacademy.ru">
+    <p class="modal__text">Enter your login and password to enter</p>
+    <p class="modal__login">
+      <label class="visually-hidden" for="user-login">Login</label>
+      <input class="modal__login-user" id="user-login" type="text" name="login" placeholder="Login">
+    </p>
+    <p class="modal__password">
+      <label class="visually-hidden" for="user-password">Password</label>
+      <input class="modal__login-password" id="user-password" type="password" name="password" placeholder="Password">
+    </p>
+    <p class="modal__remember-wrapper">
+      <label class="modal__login-checkbox">
+        <input class="modal__login-input" type="checkbox">
+        Remember me
+        <span class="modal__checkmark"></span>
+      </label>
+      <a class="modal__restore" href= "#">Forgot my password!</a>
+    </p>
+    <div class="modal__button">
+      <button class="modal__button--login" type="submit">Sign In</button>
+      <button class="modal__button--close" type="button">Close</button>
+    </div>
+  </form>
+</section>
+  <script src="js/nav-toggle.js"></script>
+  <script src="js/login-popup.js"></script>
+  <script src="js/picturefill.js"></script>
+  <script src="js/svgforeverybody.js"></script>
+</body>
+</html>
