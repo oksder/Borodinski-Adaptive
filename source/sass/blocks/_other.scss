@@ -125,3 +125,60 @@
     color: #978374;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .other {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+    &::after ,
+    &::before {
+      display: none;
+    }
+  }
+
+  .other__wrapper {
+    position: relative;
+    width: 640px;
+    margin: 0 auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      margin-top: 45px;
+      left: 0;
+      width: 640px;
+      transform: translate(-50%);
+      left: 50%;
+      height: 1px;
+      background-color: #e5ddd5;
+      }
+  }
+
+  .other__title {
+    position: relative;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    width: 255px;
+    background-color: $bg-lightgrey;
+  }
+
+  .other__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .other__label {
+    font-size: 24px;
+    line-height: 30px;
+    width: 200px;
+  }
+
+  .other-button__button {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 50px 0;
+  }
+}
