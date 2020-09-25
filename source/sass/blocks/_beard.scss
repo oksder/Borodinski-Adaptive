@@ -1,0 +1,87 @@
+.beard {
+  width: 100%;
+  margin: 0 auto;
+  color: #000000;
+  background-color: $bg-lightgrey;
+}
+
+.beard__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.beard__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 0;
+  padding: 30px 0;
+}
+
+.beard__radio-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.beard__radio {
+  position: relative;
+  text-align: center;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.beard__radio-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.beard__checkmark {
+  position: absolute;
+  top: -60px;
+  left: 27%;
+  height: 50px;
+  width: 50px;
+  background-color: #ffffff;
+  border: solid 1px #e5ddd5;
+  border-radius: 50%;
+}
+
+.beard__radio:hover .beard__radio-input ~ .beard__checkmark {
+  border: solid 1px #d5c9bd;
+}
+
+.beard__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.beard__radio-input:checked ~ .beard__checkmark:after {
+  display: block;
+}
+
+.beard__radio .beard__checkmark:after {
+ 	top: 14px;
+	left: 14px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ffffff;
+  border: solid 1px #e5ddd5;
+}
+
+.beard__icon {
+  padding: 16px 0;
+  margin: 0 auto;
+  fill: #826550;
+}
