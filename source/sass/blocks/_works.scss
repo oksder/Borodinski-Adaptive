@@ -114,13 +114,16 @@
 .works__option-list {
   text-transform: uppercase;
   display: flex;
-  width: 50%;
+  padding-right: 30px;
 }
 
 .works__option-icon {
-  padding: 20px;
-  padding-left: 0;
+  height: 63px;
   fill: #978374;
+}
+
+.works__option-item {
+  padding-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -203,19 +206,17 @@
     padding: 20px 50px;
   }
 
+  .works__option {
+    margin-top: auto;
+    position: absolute;
+    bottom: 0;
+  }
+
   .works__item {
     display: flex;
     margin-bottom: 40px;
   }
 }
-
-
-
-
-
-
-
-
 
 @media (min-width: $desktop-width) {
   .works {
@@ -248,5 +249,60 @@
   .works__button {
     top: 50px;
     right: 0px;
+  }
+
+  .works__latest {
+    bottom: 405px;
+    left: 760px;
+
+    &::before {
+      top: 0px;
+      right: 184px;
+      border-left: 15px solid transparent;
+      border-top: 30px solid #826550;
+    }
+
+    &::after {
+      top: 27px;
+      right: 184px;
+      border-left: 15px solid transparent;
+      border-bottom: 30px solid #826550;
+    }
+  }
+
+  .works__container {
+    width: 400px;
+    padding: 100px 40px 0 40px;
+  }
+
+  .works__item-wrapper {
+    display: flex;
+  }
+
+  .works__container--small {
+    width: 225px;
+    padding: 10px 35px;
+  }
+
+  .works__item {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  .works__option {
+    flex-wrap: nowrap;
+  }
+
+  .works__item--small {
+    display: block;
+    height: 545px;
+    margin: 0;
+    margin-right: 39px;
+    height: 545px;
+  }
+
+  .works__image--small {
+    width: 100%;
+    height: auto;
   }
 }
