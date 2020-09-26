@@ -1,0 +1,123 @@
+.works {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  color: #000000;
+  background-color: $bg-lightgrey;
+  padding-bottom: 70px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 50vw solid transparent;
+    border-bottom: 42px solid $bg-darkgrey;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-right: 50vw solid transparent;
+    border-bottom: 42px solid $bg-darkgrey;
+  }
+}
+
+.works__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.works__title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0;
+  padding: 30px 0;
+}
+
+.works__button {
+  display: none;
+}
+
+.works__item {
+  position: relative;
+  margin-bottom: 20px;
+  outline: solid 1px #e5ddd5;
+}
+
+.works__image {
+  width: 100%;
+}
+
+.works__latest {
+  position: absolute;
+  bottom: 340px;
+  left: 0;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  padding: 15px 20px;
+  color: #ffffff;
+  background-color: #826550;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    right: -15px;
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-top: 30px solid #826550;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 27px;
+    right: -15px;
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid #826550;;
+  }
+}
+
+.works__container {
+  padding: 0 22px;
+}
+
+.works__name {
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.works__option {
+  flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.works__option-list {
+  text-transform: uppercase;
+  display: flex;
+  width: 50%;
+}
+
+.works__option-icon {
+  padding: 20px;
+  padding-left: 0;
+  fill: #978374;
+}
