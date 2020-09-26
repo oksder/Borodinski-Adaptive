@@ -56,6 +56,7 @@
 
 .works__image {
   width: 100%;
+  height: 100%;
 }
 
 .works__latest {
@@ -120,4 +121,132 @@
   padding: 20px;
   padding-left: 0;
   fill: #978374;
+}
+
+@media (min-width: $tablet-width) {
+  .works {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -42px;
+      right: 0;
+      width: 0;
+      height: 0;
+      border-left: 50vw solid transparent;
+      border-bottom: 42px solid $bg-lightgrey;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -42px;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-right: 50vw solid transparent;
+      border-bottom: 42px solid $bg-lightgrey;
+    }
+  }
+
+  .works__wrapper {
+    position: relative;
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .works__title {
+    text-align: left;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 60px 0;
+    width: 420px;
+  }
+
+  .works__button {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 14px 0;
+    width: 160px;
+    margin: 0 auto;
+    border: 1px solid #e5ddd5;
+    font-family: inherit;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+
+      &:hover,
+      &:focus {
+         border: 1px solid #826550;
+       }
+
+      &:active {
+      border: 0;
+      background-color: #d5c9bd;
+      color: #958c84;
+    }
+  }
+
+  .works__container {
+    width: 317px;
+    padding: 20px 50px;
+  }
+
+  .works__item {
+    display: flex;
+    margin-bottom: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: $desktop-width) {
+  .works {
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -65px;
+      border-bottom: 65px solid $bg-lightgrey;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -65px;
+      border-bottom: 65px solid $bg-lightgrey;
+    }
+  }
+
+  .works__wrapper {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .works__title {
+    width: 640px;
+  }
+
+  .works__button {
+    top: 50px;
+    right: 0px;
+  }
 }
