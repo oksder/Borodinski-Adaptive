@@ -41,29 +41,30 @@
     </nav>
   </header>
   <main>
-    <section class="appointment">
-      <div class="appointment__wrapper">
-        <h2 class="appointment__title">Make an appointment for a haircut</h2>
-        <a href="index.html" class="appointment__button">Main page</a>
-        <form class="appointment-details" method="post" action="https://echo.htmlacademy.ru">
-          <p class="appointment-details__item">
-            <input class="appointment-details__input" type="text" id="surname" name="surname" placeholder="Surname" required>
-          </p>
-          <p class="appointment-details__item">
-            <input class="appointment-details__input" type="text" id="name" name="name" placeholder="Name" required>
-          </p>
-        </form>
-        <form class="appointment-contacts">
-          <p class="appointment-contacts__item">
-            <input class="appointment-contacts__input" type="tel" id="tel" name="tel" placeholder="Contact telephone" required>
-          </p>
-          <p class="appointment-contacts__item">
-            <input class="appointment-contacts__input" type="email" id="email" name="email" placeholder="Contact e-mail" required>
-          </p>
-        </form>
-        <form class="appointment-contacts__comment">
-          <textarea class="appointment-contacts__comment-input" rows="4" cols="50" name="comment" form="comment-form" placeholder="Additionall information for your master"></textarea>
-        </form>
+    <form method="post" action="https://echo.htmlacademy.ru">
+      <section class="appointment">
+        <div class="appointment__wrapper">
+          <h2 class="appointment__title">Make an appointment for a haircut</h2>
+          <a href="index.html" class="appointment__button">Main page</a>
+          <div class="appointment-details">
+            <p class="appointment-details__item">
+              <input class="appointment-details__input" type="text" id="surname" name="surname" placeholder="Surname" required>
+            </p>
+            <p class="appointment-details__item">
+              <input class="appointment-details__input" type="text" id="name" name="name" placeholder="Name" required>
+            </p>
+          </div>
+          <div class="appointment-contacts">
+            <p class="appointment-contacts__item">
+              <input class="appointment-contacts__input" type="tel" id="tel" name="tel" placeholder="Contact telephone" required>
+            </p>
+            <p class="appointment-contacts__item">
+              <input class="appointment-contacts__input" type="email" id="email" name="email" placeholder="Contact e-mail" required>
+            </p>
+          </div>
+          <div class="appointment-contacts__comment">
+            <textarea class="appointment-contacts__comment-input" rows="4" cols="50" name="comment" form="comment-form" placeholder="Additionall information for your master"></textarea>
+          </div>
       </div>
     </section>
     <section class="beard">
@@ -116,7 +117,7 @@
     <section class="other">
       <div class="other__wrapper">
         <h2 class="other__title">Other services:</h2>
-        <form class="other__form">
+        <div class="other__form">
           <label class="other__label">
             <input class="other__input" type="checkbox" checked="checked">
             Dye beard
@@ -147,12 +148,13 @@
             Polish bald head
             <span class="other__checkmark"></span>
           </label>
-        </form>
+        </div>
         <div class="other-button__wrapper">
           <button class="other-button__button" type="submit">Send request</button>
         </div>
       </div>
     </section>
+    <form>
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">

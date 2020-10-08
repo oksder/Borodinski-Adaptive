@@ -42,7 +42,6 @@ sliderToggles.forEach(function(sliderToggle) {
       sliderToggle.classList.add("slider__toggle-advantages--active");
     }
 
-
     bindClickReviews(i);
   });
 });
